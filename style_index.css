@@ -1,0 +1,636 @@
+/*Configuração inicial e completa*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: Gilroy;   
+}
+
+/*----------Media Queries - Responsividade Lateral----------*/
+
+/*Cabeçalho - Colocação da Logo*/
+header{
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    margin: 0px;
+    padding: 0px;
+    height: 10vh;
+}
+
+/*Main - Apresentação, venda e garantia, Receitas, sobre e garantia*/
+
+    /*Apresentação - Capa de apresentação*/
+.one{
+    background-color: #8c133c;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 8vh;
+}
+
+        /*Logo do livro Vendido*/
+.one .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    width: 40%;
+    height: 80vh;
+}
+
+.left img{
+    height: 60vh;
+    box-shadow: 0px 1.8vw 8vh 0px rgb(0, 0, 0,1);
+}
+
+        /*Logo de Vendas*/
+.one .right{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    width: 40%;
+    height: 80vh;
+}
+
+.right h1{
+    text-align: center;
+    color: #bdc016;
+    font-size: 2vw;
+    margin-top: 10vh;
+    padding-top: 2vh 0px 0px;
+    height: 6vh;
+    width: 100%;
+}
+
+.right h2{
+    text-align: justify;
+    text-indent: 5.5vw;
+    font-size: 1.7vw;
+    padding: 12vh 9% 0vh;
+    height: 30vh;
+    width: 82%;
+}
+
+.right span{
+    color:#bdc016;
+}
+
+a{
+    background-color: #8c133c;
+    width: 70%;
+    height: 4vh;
+    margin: 3vh 0px 12vh;
+    padding: 1vh 2% 1vh 2%;
+    text-align: center;
+    text-decoration: none;
+    color: #bdc016;
+    font-size: 1.5vw;
+    border: 0.6vh solid #660e2c;
+}
+
+a:hover{
+    background-color: #660e2c;
+    border-color: #d6366b;
+}
+
+
+    /*Venda e garantia - Preços informados do valor*/
+.two{
+    height: 82vh;
+    margin-bottom:10vh ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+        /*Venda*/
+.preco{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.preco h1{
+    border-bottom: 0.5vh solid #bdc016;
+    color: #bdc016;
+    height: 5vh;
+    width: 30%;
+    margin: 0vh 35% 0vh;
+    padding:2vh 0% 1.5vh;
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+.preco h2{
+    width: 49%;
+    padding: 10vh 1% 2vh 0%;
+    margin: 0px;
+    height: 5vh;
+    font-size: 2vw;
+    text-align: end;
+}
+
+.preco h3{
+    color: #bdc016;
+    width: 49%;
+    padding: 4vh 0% 1vh 1%;
+    margin: 0px;
+    height: 12vh;
+    font-size: 5vw;
+}
+
+.preco h5{
+    width: 96%;
+    padding: 1vh 0% 3vh 4%;
+    margin: 0px;
+    height: 6vh;
+    font-size: 3vw;
+    text-align: center;
+}
+
+        /*Garantia*/
+.garantia{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.garantia img{
+    height: 25vh;
+    padding: auto 5%;
+}
+
+.garantia div{
+    padding: 0vh 0% 0vh 2%;
+    margin: 0px;
+    width: 40%;
+    height: 25vh;
+}
+
+.garantia div h1{
+    padding: 3vh 0% 1vh;
+    height: 6vh;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-indent: 3vw;
+}
+
+.garantia div h2{
+    padding: 0vh 0% 3vh;
+    height: 12vh;
+    font-size: 1.2vw;
+    text-align: justify;
+    text-indent: 3vw;
+}
+
+.two a{
+    width: 30%;
+    height: 4vh;
+    margin: 5vh 0px 1vh;
+    padding: 1vh 2% 1vh 2%;
+    background-color: white;
+    color: black;
+    border-color: #d6366b;
+}
+
+.two a:hover{
+    background-color: black;
+    color: white;
+}
+
+    /*Apresentação das Receitas*/
+.tree{
+    background-color: #8c133c;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+    height: 82vh;
+    margin: 10vh 10vh 10vh 10vh;
+}
+
+.tree h1{
+    width: 100%;
+    padding: 2vh 0vh 2vh;
+    height: 7vh;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #bdc016;
+}
+
+.tree h2{
+    width: 100%;
+    height: 5vh;
+    padding:1vh 0vh 5vh;
+    text-align: center;
+    font-size: 1.6vw;
+}
+
+.pictures{
+    width: 20%;
+    height: 50vh;
+    margin: 3vh 0% 7vh 0%;
+    padding: 0vh 0% 0vh 0%;
+    box-shadow: 0px 1vw 2vh 0px rgb(0, 0, 0,0.3);
+}
+
+.pictures h1{
+    width: 100%;
+    height: 3.5vh;
+    padding: 3vh 0% 3vh 0%;
+    border-bottom: #bdc016 solid 0.5vh;
+    font-size: 1.6vw;
+}
+
+.pictures img{
+    width: 70%;
+    margin:3vh 15% 0vh;
+}
+
+    /*Empresa e retorno da garantia*/
+.four{
+    height: 82vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+    
+.sobre{
+    width: 100%;
+    height: 43vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+    
+.sobre .foto{
+    height: 18vh;
+    padding: 3vh 3vw 1vh 3vw;
+    max-width: 40vw;
+}
+    
+.sobre p{
+    width: 44%;
+    padding: 0vh 3%;
+    font-size: 1.2vw;
+    text-indent: 4vw;
+    text-align: justify;
+}
+    
+.four a{
+    width: 30%;
+    height: 4vh;
+    margin: 3vh 0px 2vh;
+    padding: 1vh 2% 1vh 2%;
+    background-color: white;
+    color: black;
+    border-color: #d6366b;
+}
+    
+.four a:hover{
+    background-color: black;
+    color: white;
+}
+
+/*Rodapé - Contato, Redes sociais e direitos*/
+footer{
+    height: 14vh;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c133c;
+    text-align: center;
+}
+
+footer .contato{
+    width: 50%;
+    padding-top: 1vh;
+    height: 6vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.contato a{
+    color: white;
+    text-decoration: none;
+    border-bottom:0.15vh solid white;
+    border-left: 0.15vw solid white;
+    border-top:0.15vh solid white;
+    border-right: 0.15vw solid white;
+    width: 15%;
+    padding:0.5vh 2% 0vh 2%;
+    margin-top: 1vh;
+    height: 3vh;
+    font-size: 1.2vw;
+}
+
+footer .Redes_sociais{
+    width: 30%;
+    margin-left: 10%;
+    height: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Redes_sociais a{
+    border:0px solid red;
+    width: 10%;
+    height: 4vh;
+    margin:0vh 1% 0vh;
+    padding: 0px;
+}
+
+.Redes_sociais a{
+    background-color: #d6366b00;
+}
+
+.Redes_sociais a img{
+    width: 75%;
+}
+
+footer .Direitos{
+    width: 50%;
+    height: 5vh;
+    padding: 2vh 0% 0vh 0%;
+    font-size: 1vw;
+    color: white;
+}
+
+
+
+
+/*----------Media Queries - Responsividade vertical----------*/
+
+@media all and (orientation: portrait){
+/*Cabeçalho - Colocação da Logo*/
+header img{
+    height: 6vh;
+}
+/*Main - Apresentação, venda e garantia, Receitas, sobre e garantia*/
+
+            /*Logo do livro Vendido*/
+.one .left{
+    width: 100%;
+    height: 42vh;
+    margin: 0px;
+    padding: 0px;
+}
+    
+.left img{
+    height: 30vh;
+    box-shadow: 0px 1.8vw 8vh 0px rgb(0, 0, 0,1);
+}
+
+        /*Logo de Vendas*/
+.one .right{
+    width: 100%;
+    height: 40vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.right h1{
+    font-size: 5vw;
+    margin-top: 2vh;
+    padding: 2vh 0px 1vh;
+    height: 4vh;
+    width: 100%;
+}
+
+.right h2{
+    text-indent: 7vw;
+    font-size: 3.7vw;
+    padding: 2vh 9% 2vh;
+    height: 12vh;
+    width: 100%;
+}
+
+a{
+    width: 70%;
+    height: 3vh;
+    margin: 1vh 0px 6vh;
+    padding: 1vh 2% 1vh 2%;
+    font-size: 4vw;
+}
+
+    /*Venda e garantia - Preços informados do valor*/
+        /*Venda*/
+.preco{
+    height: 39vh;
+}
+
+.preco h1{
+    height: 4vh;
+    width: 60%;
+    margin: 2vh 20% 1vh;
+    padding:1.5vh 0% 1vh;
+    font-size: 5vw;
+}
+
+.preco h2{
+    width: 49%;
+    padding: 11vh 1% 2vh 0%;
+    margin: 0px;
+    height: 3vh;
+    font-size: 4vw;
+}
+
+.preco h3{
+    color: #bdc016;
+    width: 49%;
+    padding: 8vh 0% 3vh 1%;
+    margin: 0px;
+    height: 5vh;
+    font-size: 9vw;
+}
+
+.preco h5{
+    width: 96%;
+    padding: 4vh 0% 5vh 4%;
+    margin: 0px;
+    height: 4vh;
+    font-size: 5vw;
+}
+
+        /*Garantia*/
+.garantia{
+    height: 31vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.garantia img{
+    height: 13vh;
+    margin-top: 2vh;
+}
+
+.garantia div{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 18vh;
+}
+
+.garantia div h1{
+    text-align: center;
+    width: 100%;
+    padding: 2vh 0% 1vh;
+    height: 3vh;
+    font-size: 4vw;
+    text-indent: 0vw;
+}
+
+.garantia div h2{
+    padding: 1vh 7% 2vh;
+    height: 7vh;
+    font-size: 3vw;
+    text-align: justify;
+    text-indent: 7vw;
+}
+
+.two a{
+    width: 70%;
+    height: 3vh;
+    margin: 1vh 0px 3vh;
+    padding: 1vh 2% 1vh 2%;
+}
+
+    /*Apresentação das Receitas*/
+.tree{
+    height: 90vh;
+    padding-bottom: 2vh;
+    margin: 5vh 5vh 5vh 5vh;
+}
+
+.tree h1{
+    padding: 0vh 0vh 0vh;
+    height: 6vh;
+    font-size: 8vw;
+}
+
+.tree h2{
+    height: 6vh;
+    padding:0vh 1vh 0vh;
+    font-size: 4vw;
+}
+
+.pictures{
+    width: 80%;
+    height: 25vh;
+    margin: 0vh 0% 0vh 0%;
+    padding: 0vh 0% 0vh 0%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+.pictures h1{
+    width: 60%;
+    margin: 0px 5%;
+    height: 3vh;
+    padding: 0vh 0% 0vh 0%;
+    border-bottom: #bdc016 solid 0.5vh;
+    font-size: 4vw;
+}
+
+.pictures img{
+    height: 8vh;
+    width: auto;
+    margin:0vh 3% 0vh;
+}
+
+    /*Empresa e retorno da garantia*/
+
+.sobre{
+    justify-content: center;
+}
+
+.sobre .foto{
+    height: 6vh;
+    width: auto;
+    padding: 8vh 0vw 8vh 0vw;
+}
+
+.sobre p{
+    width: 100%;
+    height: 12vh;
+    padding: 4vh 7%;
+    font-size: 3vw;
+    text-indent: 7vw;
+}
+
+.four a{
+    width: 70%;
+    height: 3vh;
+    margin: 1vh 0px 3vh;
+    padding: 1vh 2% 1vh 2%;
+}
+
+/*Rodapé - Contato, Redes sociais e direitos*/
+footer .contato{
+    height: 6vh;
+    width: 100%;
+}
+
+.contato a{
+    width: 15%;
+    padding:1vh 2% 1vh 2%;
+    margin-top: 1vh;
+    height: 2vh;
+    font-size: 2.7vw;
+}
+
+footer .Redes_sociais{
+    width: 30%;
+    margin-left: 10%;
+    height: 7vh;
+}
+
+.Redes_sociais a{
+    width: 20%;
+    height: 6vh;
+    margin:1vh 1% 0vh;
+}
+
+footer .Direitos{
+    width: 60%;
+    height: 2vh;
+    padding: 2vh 0% 3vh 0%;
+    font-size: 2vw;
+}
+
+}
+
+
+
+
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./font_text/Gilroy.otf);
+}
