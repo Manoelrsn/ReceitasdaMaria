@@ -1,0 +1,551 @@
+
+/*Media Queries - horizontal orientation*/
+
+/*-Class A General - (Body)-*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    font-family: Gilroy;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+    /*--Class B (Parte A) - (InterfaceOne)--*/
+    .InterfaceOne{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+        /*---Class C (Parte AA) - (Header and Header img) ---*/
+        .Header{
+            width: 100%;
+            height: 14vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .Header img{
+                width: auto;
+                height: 12vh;
+            }
+
+        /*---Class C (Parte BA) - (DisplayLeft and DisplayLeft img) ---*/
+        .DisplayLeft{
+            background-color: #8c133c;
+            width: 40%;
+            height: 79vh;
+            margin-bottom: 7vh;
+            padding-left: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .DisplayLeft img{
+                width: auto;
+                height: 60vh;
+                box-shadow: 0px 1.8vw 8vh 0px rgb(0, 0, 0,1);
+            }
+
+        /*---Class C (Parte DA) - (DisplayRight and Box) ---*/
+        .DisplayRight{
+            background-color: #8c133c;
+            width: 40%;
+            height: 79vh;
+            margin-bottom: 7vh;
+            padding-right: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            /*----Class D (Parte DAA) - (Box and Others) ----*/
+            .DisplayRight .Box{
+                width: 100%;
+                height: 60vh;
+                display: flex;
+                flex-flow: row wrap;  
+                justify-content: center;
+                align-items: center;
+            }
+                .Box h1{
+                    text-align: center;
+                    font-size: 2vw;
+                    padding: 2vh 5%;
+                    color: #bdc016;
+                }
+                .Box h2{
+                    text-align: justify;
+                    font-size: 1.8vw;
+                    text-indent: 5.5vw;
+                    padding: 2vh 5%;
+                }
+                .Box span{
+                    color: #bdc016;
+                }
+                .Box a{
+                    background-color: #8c133c;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #bdc016;
+                    font-size: 1.5vw;
+                    padding: 2vh;
+                    border: 0.6vh solid #660e2c;
+                }
+                .Box a:hover{
+                    background-color: #660e2c;
+                    border-color: #d6366b;
+                }
+
+    /*--Class B (Parte B) - (InterfaceTwo)--*/
+    .InterfaceTwo{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+        /*---Class C (Parte BA) - (Title and Title h1) ---*/
+        .Title{
+            width: 100%;
+            height: 16vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .Title h1{
+                font-size: 2vw;
+                padding:3vh 3vw;
+                border-bottom: 0.5vh solid #bdc016;
+                color: #bdc016;
+            }
+        
+        /*---Class C (Parte BB) - (OfferDisplay) ---*/
+        .OfferDisplay{
+            width: 100%;
+            height: 34vh;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+            .OfferDisplay h3{
+                text-align: center;
+                width: 100%;
+                font-size: 2vw;
+            }
+            .OfferDisplay h3 small{
+                padding-left: 1vw;
+                font-size: 2vw;
+                color: #bdc016;
+            }
+            .OfferDisplay h3 span{
+                font-size: 5vw;
+            }
+            .OfferDisplay h4{
+                text-align: center;
+                width: 100%;
+                font-size: 2vw;
+            }
+            .OfferDisplay h4 span{
+                font-size: 3vw;
+            }
+
+        /*---Class C (Parte BC) - (WarrantDisplay) ---*/
+        .WarrantyDisplay{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: center;
+            align-items: center;
+        }
+
+            /*----Class D (Parte BCA) - (img, WarrantyText and a) ----*/
+            .WarrantyDisplay img{
+                margin-left: 25vw;
+                width: 12vw;
+                height: 12vw;
+            }
+            .WarrantyDisplay .WarrantyText{
+                width: 36vw;
+                height: 12vw;
+                margin-right: 25vw;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+            }
+                .WarrantyText h1{
+                    text-align: center;
+                    font-size: 1.8vw;
+                    padding: 2vh 0vw;
+                }
+                .WarrantyText p{
+                    padding: 2vh 2vw;
+                    text-align: justify;
+                    text-indent: 2.5vw;
+                    font-size: 1.2vw;
+                }
+            .WarrantyDisplay a{
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.5vw;
+                    padding: 2vh;
+                    border: 0.6vh solid #d6366b;
+            }
+            .WarrantyDisplay a:hover{
+                    background-color: #000000;
+                    color: white;
+            }
+
+    /*--Class B (Parte C) - (InterfaceTree)--*/
+    .InterfaceTree{
+        width: calc(100% - 10vw);
+        height: calc(100vh - 10vw);
+        margin: 5vw 5vw;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        background-color: #8c133c;
+        color: #bdc016;
+    }
+
+        /*---Class C (Parte CA) - (h1, h2 and RecipesDisplay) ---*/
+        .InterfaceTree h1{
+            text-align: center;
+            font-size: 3vw;
+            width: 60%;
+            padding: 2vh;
+        }
+        .InterfaceTree h2{
+            text-align: center;
+            font-size: 1.8vw;
+            width: 60%;
+            padding: 3vh;
+        }
+        .InterfaceTree .RecipesDisplay{
+            width: 100%;
+            height: 55vh;
+            display: flex;
+            justify-content: space-around;
+        }
+            .RecipesDisplay .Pictures{
+                width: 20%;
+                margin: 4vh 0vw;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content:start;
+                align-items: center;
+                box-shadow: 0px 1vw 3vh 0px rgb(0, 0, 0,0.3);
+            }
+                .Pictures h3{
+                    text-align: center;
+                    font-size: 1.7vw;
+                    width: 100%;
+                    padding: 2vh 0vw;
+                    border-bottom: solid #bdc016;
+                }
+                .Pictures img{
+                    height: 15vh;
+                    padding: 2vh 0vw 1.5vh;
+                }
+
+    /*--Class B (Parte D) - (InterfaceFour)--*/
+    .InterfaceFour{
+        width: 100%;
+        height: 100vh;
+    }
+
+        /*---Class C (Parte DA) - (EnterpriseDisplay) ---*/
+        .EnterpriseDisplay{
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+            /*----Class D (Parte DAA) - (img and TextEnterprise) ----*/
+            .EnterpriseDisplay img{
+                margin-top: 5vh;
+                height: 20vh;
+            }
+            .EnterpriseDisplay .TextEnterprise{
+                width: 45%;
+                padding: 0vh 2.5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: justify;
+                text-indent: 3vw;
+                font-size: 1.2vw;
+            }
+        /*---Class C (Parte DB) - (WarrantDisplay) ---*/
+        /*Shared features above*/
+
+        /*---Class C (Parte DC) - (Footer) ---*/
+        .Footer{
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            flex-flow: row wrap;
+            background-color: #8c133c;
+        }
+
+            /*----Class D (Parte DCA) - (Contact, SocialMidia, Copyright) ----*/
+            .Footer .Contact{
+                width: 50%;
+                height: 12vh;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+                .Contact a{
+                    text-align: center;
+                    font-size: 1.3vw;
+                    text-decoration: none;
+                    width: 15%;
+                    padding: 1vh;
+                    color: white;
+                    border: solid white 0.2vh;
+                }
+                .Contact a:hover{
+                    background-color: #660e2c;
+                }
+            .Footer .SocialMidia{
+                width: 20%;
+                padding: 0vh 15%;
+                height: 12vh;
+                display: flex;
+                justify-content:space-around;
+                align-items: center;
+            }
+                .SocialMidia a{
+                    height: 8vh;
+                    width: 8vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    .SocialMidia a img{
+                        width: 5vh;
+                        height: 5vh;
+                    }
+            .Footer .Copyright{
+                width: 100%;
+                height: 8vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1vw;
+                color: white;
+            }
+
+/*Media Queries - Orientação Vertical*/
+@media all and (orientation: portrait){
+/*-Class A General - (Body)-*/
+
+    /*--Class B (Parte A) - (InterfaceOne)--*/
+
+        /*---Class C (Parte AA) - (Header img) ---*/
+            .Header img{
+                width: 80%;
+                height: auto;
+            }
+
+        /*---Class C (Parte BA) - (DisplayTop and DisplayTop img) ---*/
+        .DisplayTop{
+            width: 100%;
+            height: 40vh;
+            margin-bottom: 0vh;
+            padding-left: 0%;
+        }
+            .DisplayTop img{
+                width: auto;
+                height: 30vh;
+            }
+
+        /*---Class C (Parte DA) - (DisplayBottom and Box) ---*/
+        .DisplayBottom{
+            background-color: #8c133c;
+            width: 100%;
+            height: 40vh;
+            margin-bottom: 6vh;
+            padding-right: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            /*----Class D (Parte DAA) - (Box and Others) ----*/
+            .DisplayBottom .Box{
+                width: 80%;
+                height: 30vh;
+            }
+                .Box h1{
+                    font-size: 4vw;
+                }
+                .Box h2{
+                    font-size: 3vw;
+                    text-indent: 7.5vw;
+                }
+                .Box a{
+                    font-size: 2.8vw;
+                    padding: 2vh;
+                }
+
+    /*--Class B (Parte B) - (InterfaceTwo)--*/
+
+        /*---Class C (Parte BA) - (Title and Title h1) ---*/
+
+            .Title h1{
+                font-size: 5vw;
+                padding:3vh 8vw;
+            }
+        
+        /*---Class C (Parte BB) - (OfferDisplay) ---*/
+
+            .OfferDisplay h3{
+                font-size: 4vw;
+            }
+            .OfferDisplay h3 small{
+                font-size: 4vw;
+            }
+            .OfferDisplay h3 span{
+                font-size: 7vw;
+            }
+            .OfferDisplay h4{
+                font-size: 4vw;
+            }
+            .OfferDisplay h4 span{
+                font-size: 6vw;
+            }
+
+        /*---Class C (Parte BC) - (WarrantDisplay) ---*/
+
+            /*----Class D (Parte BCA) - (img, WarrantyText and a) ----*/
+            .WarrantyDisplay img{
+                margin-left: 0vw;
+                width: 25vw;
+                height: 25vw;
+            }
+            .WarrantyDisplay .WarrantyText{
+                width: 65vw;
+                height: 25vw;
+                margin-right: 0vw;
+            }
+                .WarrantyText h1{
+                    font-size: 3.5vw;
+                    padding: 1vh 0vw;
+                }
+                .WarrantyText p{
+                    padding: 1vh 5vw;
+                    text-indent: 5.5vw;
+                    font-size: 2.7vw;
+                }
+            .WarrantyDisplay a{
+                    font-size: 2.8vw;
+                    padding: 2vh;
+            }
+
+    /*--Class B (Parte C) - (InterfaceTree)--*/
+
+        /*---Class C (Parte CA) - (h1, h2 and RecipesDisplay) ---*/
+        .InterfaceTree h1{
+            font-size: 5vw;
+            padding: 4vh;
+        }
+        .InterfaceTree h2{
+            font-size: 4vw;
+            width: 60%;
+            padding: 2vh;
+        }
+        .InterfaceTree .RecipesDisplay{
+            height: 68vh;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .RecipesDisplay .Pictures{
+                width: 60%;
+                margin: 2vh 0vw;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content:space-around;
+                align-items: center;
+            }
+                .Pictures h3{
+                    font-size: 3.5vw;
+                    width: 100%;
+                }
+                .Pictures img{
+                    height: 7vh;
+                    padding: 2vh 0vw 2vh;
+                }
+
+    /*--Class B (Parte D) - (InterfaceFour)--*/
+
+        /*---Class C (Parte DA) - (EnterpriseDisplay) ---*/
+        .EnterpriseDisplay{
+            height: 36vh;
+        }
+
+            /*----Class D (Parte DAA) - (img and TextEnterprise) ----*/
+            .EnterpriseDisplay img{
+                margin-top: 10vh;
+                height: 5vh;
+            }
+            .EnterpriseDisplay .TextEnterprise{
+                width: 80%;
+                padding: 0vh 5%;
+                text-indent: 7vw;
+                font-size: 3vw;
+            }
+        /*---Class C (Parte DB) - (WarrantDisplay) ---*/
+        /*Shared features above*/
+
+        /*---Class C (Parte DC) - (Footer) ---*/
+        .Footer{
+            height: 14vh;
+        }
+
+            /*----Class D (Parte DCA) - (Contact, SocialMidia, Copyright) ----*/
+            .Footer .Contact{
+                width: 50%;
+                height: 10vh;
+            }
+                .Contact a{
+                    font-size: 1.8vw;
+                }
+            .Footer .SocialMidia{
+                width: 36%;
+                padding: 0vh 7%;
+                height: 10vh;
+            }
+                .SocialMidia a{
+                    height: 4vh;
+                    width: 4vh;
+                }
+                    .SocialMidia a img{
+                        width: 3vh;
+                        height: 3vh;
+                    }
+            .Footer .Copyright{
+                height: 4vh;
+                font-size: 2vw;
+            }
+
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./font_text/Gilroy.otf);
+}
